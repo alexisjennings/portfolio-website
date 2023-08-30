@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
    AppBar,
    Box,
@@ -30,7 +29,9 @@ function Header() {
                >
                   <MenuIcon />
                </IconButton>
-               <Typography>Alexis Jennings</Typography>
+               <Typography sx={{ fontSize: "h6.fontSize" }}>
+                  Alexis Jennings
+               </Typography>
                <Drawer
                   anchor="top"
                   open={opened}
@@ -40,22 +41,34 @@ function Header() {
                   <List>
                      <ListItem disablePadding>
                         <ListItemButton component="a" href="/">
-                           <ListItemText primary="Home"></ListItemText>
+                           <ListItemText
+                              sx={{ fontSize: "h6.fontSize" }}
+                              primary="Home"
+                           ></ListItemText>
                         </ListItemButton>
                      </ListItem>
                      <ListItem disablePadding>
                         <ListItemButton component="a" href="/about">
-                           <ListItemText primary="About"></ListItemText>
+                           <ListItemText
+                              sx={{ fontSize: "h6.fontSize" }}
+                              primary="About"
+                           ></ListItemText>
                         </ListItemButton>
                      </ListItem>
                      <ListItem disablePadding>
                         <ListItemButton component="a" href="/projects">
-                           <ListItemText primary="Projects"></ListItemText>
+                           <ListItemText
+                              sx={{ fontSize: "h6.fontSize" }}
+                              primary="Projects"
+                           ></ListItemText>
                         </ListItemButton>
                      </ListItem>
                      <ListItem disablePadding>
                         <ListItemButton component="a" href="/contact">
-                           <ListItemText primary="Contact"></ListItemText>
+                           <ListItemText
+                              sx={{ fontSize: "h6.fontSize" }}
+                              primary="Contact"
+                           ></ListItemText>
                         </ListItemButton>
                      </ListItem>
                   </List>
