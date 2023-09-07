@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This class serves to represent an individual auditorium in a movie theater. The auditorium is composed of

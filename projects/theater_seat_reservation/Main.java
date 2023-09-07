@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This program's purpose is to simulate a movie theater seat reserving program. It has the following methods:

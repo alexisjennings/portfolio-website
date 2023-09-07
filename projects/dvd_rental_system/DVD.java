@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This class serves to represent DVD titles in a DVD rental system. The class has variables to keep track

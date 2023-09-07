@@ -1,7 +1,4 @@
 # Alexis Jennings
-# aej190000
-# CS 4395.001
-# Word Guessing Game Assignment
 
 import sys
 import pathlib
@@ -24,14 +21,11 @@ def preprocess(tokens):
     lemmas = [wnl.lemmatize(t) for t in tokens]
     lemmas_unique = list(set(lemmas))
 
-    # pos tag unique lemmas and print first 20
+    # pos tag unique lemmas
     tags = pos_tag(lemmas_unique)
-    print("First 20 tagged unique lemmas: " + str(tags[:20]))
 
     # keep only nouns of unique lemmas
     nouns = [t[0] for t in tags if t[1] == 'NN']
-    print("Number of tokens: " + str(len(tokens)))
-    print("Number of nouns: " + str(len(nouns)))
     return tokens, nouns
 
 
@@ -107,7 +101,6 @@ def main():
     # calculate lexical diversity
     tokens = word_tokenize(text)
     words_set = set(tokens)
-    print("\nLexical diversity: %.2f" % (len(words_set) / len(tokens)))
 
     # preprocess text
     tokens, nouns = preprocess(tokens)

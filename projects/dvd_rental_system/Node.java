@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * This class is a basic Node class for a doubly linked list. It has a generically typed payload G.
  * The class implements the Comparable interface, and has an overridden compareTo method to compare

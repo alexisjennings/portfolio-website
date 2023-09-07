@@ -1,6 +1,4 @@
 # Alexis Jennings
-# CS 4395.001
-# N-Grams Program 1
 
 import pathlib
 import pickle

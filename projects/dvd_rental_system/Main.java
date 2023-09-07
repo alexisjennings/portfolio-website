@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This program's purpose is to simulate a DVD rental system. It takes two files, an inventory log and a 

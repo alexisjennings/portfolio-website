@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This class serves to represent a seat in a movie theater. It has variables to store the row and

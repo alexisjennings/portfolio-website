@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This class implements a simple binary search tree. It has a recursive search method to find a given node,

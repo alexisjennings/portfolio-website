@@ -1,13 +1,10 @@
 // Alexis Jennings
-// aej190000
-// CS 4348.001
-// Project 2
 
 import java.util.concurrent.Semaphore;
 import java.util.Queue;
 import java.util.LinkedList;
 
-public class Project2
+public class DMVSim
 {
     // number of customers
     static final int N = 20;

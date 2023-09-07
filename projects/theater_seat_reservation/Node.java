@@ -1,5 +1,4 @@
 // Alexis Jennings
-// aej190000
 /*
  * Description:
  * This class is a custom Node class, for use in a 2D grid of Nodes. The class has a generic type parameter,

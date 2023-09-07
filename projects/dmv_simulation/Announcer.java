@@ -1,7 +1,4 @@
 // Alexis Jennings
-// aej190000
-// CS 4348.001
-// Project 2
 
 public class Announcer implements Runnable
 {
@@ -15,16 +12,16 @@ public class Announcer implements Runnable
 	{
 	    try
 	    {
-		Project2.cust_waiting.acquire();		// wait for a customer to be waiting in waiting area
-		Project2.agent_line.acquire();			// wait for an agent line spot to open
+		DMVSim.cust_waiting.acquire();		// wait for a customer to be waiting in waiting area
+		DMVSim.agent_line.acquire();			// wait for an agent line spot to open
 		
 		// critical section
-		Project2.mutex2.acquire();
-		cust_dmv_num = Project2.waiting_area_q.remove();// spot is open, dequeue customer from waiting area
-		Project2.mutex2.release();
+		DMVSim.mutex2.acquire();
+		cust_dmv_num = DMVSim.waiting_area_q.remove();// spot is open, dequeue customer from waiting area
+		DMVSim.mutex2.release();
 		
 		call_number();					// print that the announcer called a number
-		Project2.number_call.release();			// signal that a number has been called
+		DMVSim.number_call.release();			// signal that a number has been called
 	    }
 	    catch (Exception e)
 	    {
