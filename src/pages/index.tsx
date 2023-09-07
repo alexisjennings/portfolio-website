@@ -1,5 +1,24 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Paper, Typography } from "@mui/material";
 
 export default function Page() {
-   return <Typography className="text-blue-500 pt-20">Test</Typography>;
+   return (
+      <Box
+         sx={{
+            pt: 10,
+            pb: 6,
+         }}
+      >
+         <Container maxWidth="sm">
+            <Typography
+               sx={{ fontWeight: "medium" }}
+               component="h1"
+               variant="h3"
+               align="center"
+               gutterBottom
+            >
+               Welcome!
+            </Typography>
+         </Container>
+      </Box>
+   );
 }

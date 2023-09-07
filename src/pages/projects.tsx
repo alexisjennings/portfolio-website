@@ -13,7 +13,7 @@ import { getProjectURL } from "../utils";
 const projects = [
    {
       title: "Portfolio Website",
-      tools: ["TypeScript", "ReactJS", "Next.js", "Material UI"],
+      tools: ["TypeScript", "React", "Next.js", "Material UI"],
       descr: "The website you're viewing right now! I built the site to showcase what I have learned from working with React and TypeScript over the past few months.",
       link: "https://github.com/alexisjennings/portfolio-website",
    },
@@ -53,14 +53,14 @@ export default function Page() {
    return (
       <Box
          sx={{
-            pt: 8,
+            pt: 10,
             pb: 6,
          }}
       >
          <Typography
             sx={{ fontWeight: "medium" }}
             component="h1"
-            variant="h3"
+            variant="h4"
             align="center"
             gutterBottom
          >
@@ -71,17 +71,22 @@ export default function Page() {
                <Card>
                   <CardContent>
                      <Typography
-                        sx={{ fontWeight: "medium" }}
+                        sx={{ fontWeight: "medium", mb: 1 }}
                         component="h2"
                         variant="h5"
                         align="center"
                      >
                         {project.title}
                      </Typography>
-                     <Box className="flex justify-center">
+                     <Box className="flex justify-center" sx={{ mb: 1 }}>
                         <Stack direction="row" spacing={1}>
                            {project.tools.map((tool) => (
-                              <Chip label={tool} color="primary" size="small" />
+                              <Chip
+                                 label={tool}
+                                 color="primary"
+                                 size="small"
+                                 className="font-medium"
+                              />
                            ))}
                         </Stack>
                      </Box>
@@ -92,7 +97,8 @@ export default function Page() {
                   <Box className="flex justify-center">
                      <CardActions>
                         <Button
-                           variant="outlined"
+                           sx={{ mb: 2 }}
+                           variant="contained"
                            href={project.link}
                            target="_blank"
                            rel="noopener noreferrer"

@@ -6,14 +6,14 @@ export default function Page() {
    return (
       <Box
          sx={{
-            pt: 8,
+            pt: 10,
             pb: 6,
          }}
       >
          <Typography
             sx={{ fontWeight: "medium" }}
             component="h1"
-            variant="h3"
+            variant="h4"
             align="center"
             gutterBottom
          >
@@ -29,7 +29,7 @@ export default function Page() {
                >
                   email: alexisaj@ymail.com
                </Typography>
-               <CopyToClipboardButton />
+               <CopyToClipboardButton textToCopy="alexisaj@ymail.com" />
             </Box>
          </Paper>
       </Box>

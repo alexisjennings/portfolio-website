@@ -25,6 +25,8 @@ function Header() {
                <IconButton
                   onClick={toggleDrawer(true)}
                   size="medium"
+                  disableRipple
+                  disableFocusRipple
                   sx={{ flexGrow: 1, justifyContent: "left" }}
                >
                   <MenuIcon />
