@@ -1,11 +1,15 @@
 import { Box, Button, Snackbar } from "@mui/material";
 import { useState } from "react";
 
-export default function CopyToClipboardButton() {
+export default function CopyToClipboardButton({
+   textToCopy,
+}: {
+   textToCopy: string;
+}) {
    const [open, setOpen] = useState(false);
    const handleClick = () => {
       setOpen(true);
-      navigator.clipboard.writeText(window.location.toString());
+      navigator.clipboard.writeText(textToCopy);
    };
 
    return (
