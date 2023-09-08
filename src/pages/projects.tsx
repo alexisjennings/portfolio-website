@@ -15,7 +15,7 @@ const projects = [
       id: 1,
       title: "Portfolio Website",
       tools: ["TypeScript", "React", "Next.js", "Material UI"],
-      descr: "The website you're viewing right now! I built the site to showcase what I have learned from working with React and TypeScript over the past few months.",
+      descr: "The website you're viewing right now. I built the site to showcase what I have learned from working with React and TypeScript over the past few months.",
       link: "https://github.com/alexisjennings/portfolio-website",
    },
    {
@@ -64,13 +64,13 @@ export default function Page() {
          }}
       >
          <Typography
-            sx={{ fontWeight: "medium" }}
+            sx={{ fontWeight: "medium", pl: 3 }}
             component="h1"
             variant="h4"
-            align="center"
+            align="left"
             gutterBottom
          >
-            Projects
+            projects.
          </Typography>
          {projects.map((project) => (
             <Box sx={{ margin: 3 }} key={project.id}>
@@ -80,11 +80,11 @@ export default function Page() {
                         sx={{ fontWeight: "medium", mb: 1 }}
                         component="h2"
                         variant="h5"
-                        align="center"
+                        align="left"
                      >
                         {project.title}
                      </Typography>
-                     <Box className="flex justify-center" sx={{ mb: 1 }}>
+                     <Box className="flex justify-left" sx={{ mb: 1 }}>
                         <Stack direction="row" spacing={1}>
                            {project.tools.map((tool) => (
                               <Chip
@@ -97,7 +97,7 @@ export default function Page() {
                            ))}
                         </Stack>
                      </Box>
-                     <Typography variant="body1" align="center">
+                     <Typography variant="body1" align="left">
                         {project.descr}
                      </Typography>
                   </CardContent>

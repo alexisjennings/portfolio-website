@@ -1,4 +1,4 @@
-import { Box, Button, Typography, Paper } from "@mui/material";
+import { Box, Chip, Stack, Typography, Paper } from "@mui/material";
 
 export default function Page() {
    return (
@@ -9,39 +9,102 @@ export default function Page() {
          }}
       >
          <Typography
-            sx={{ fontWeight: "medium" }}
+            sx={{ fontWeight: "medium", pl: 3 }}
             component="h1"
             variant="h4"
-            align="center"
+            align="left"
             gutterBottom
          >
-            About Me
+            about.
          </Typography>
-         <Paper sx={{ margin: 3 }}>
-            <Typography sx={{ padding: 3 }} variant="body1" align="center">
-               Hi! I'm Alexis, a 22 year old developer from Dallas, Texas. I
-               graduated with a Bachelor of Science in Computer Science from The
-               University of Texas at Dallas in May of 2023. My favorite
-               programming languages are Java and Python, and I'm currently
-               learning how to use JavaScript and TypeScript for web development
-               with React and Next.js. I have some experience using HTML and CSS
-               as well.
+         <Paper sx={{ mx: 3 }}>
+            <Typography sx={{ px: 3, pt: 3 }} variant="body1" align="left">
+               hi! I'm Alexis, a 22 year-old developer from Dallas, Texas.
+               yeehaw!
             </Typography>
+            <Typography sx={{ px: 3, pt: 3 }} variant="body1" align="left">
+               likes:
+            </Typography>
+            <Box className="flex justify-left" sx={{ mb: 1, px: 3, pt: 1 }}>
+               <Stack direction="row" spacing={1}>
+                  <Chip
+                     label="programming"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="cats"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="video games"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="music"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+               </Stack>
+            </Box>
+            <Typography sx={{ px: 3, pt: 3 }} variant="body1" align="left">
+               favorite tools:
+            </Typography>
+            <Box
+               className="flex justify-left"
+               sx={{ mb: 1, px: 3, pb: 3, pt: 1 }}
+            >
+               <Stack direction="row" spacing={1}>
+                  <Chip
+                     label="Java"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="Python"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="TypeScript"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+                  <Chip
+                     label="React"
+                     color="primary"
+                     size="small"
+                     className="font-medium"
+                  />
+               </Stack>
+            </Box>
          </Paper>
          <Typography
-            sx={{ fontWeight: "medium" }}
+            sx={{ fontWeight: "medium", pl: 3, pt: 1 }}
             component="h1"
             variant="h4"
-            align="center"
+            align="left"
             gutterBottom
          >
-            About This Website
+            about this site.
          </Typography>
-         <Paper sx={{ margin: 3 }}>
-            <Typography sx={{ padding: 3 }} variant="body1" align="center">
-               This website was built using the Next.js web framework with React
-               components and written using TypeScript. The GitHub repository
-               for this website can be found on my Projects page, if interested!
+         <Paper sx={{ mx: 3 }}>
+            <Typography sx={{ padding: 3 }} variant="body1" align="left">
+               this website was built using the Next.js web framework with React
+               components and written using TypeScript.
+            </Typography>
+            <Typography sx={{ px: 3, pb: 3 }} variant="body1" align="left">
+               the GitHub repository for this website can be found on my
+               projects page.
             </Typography>
          </Paper>
       </Box>

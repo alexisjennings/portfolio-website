@@ -32,7 +32,7 @@ function Header() {
                   <MenuIcon />
                </IconButton>
                <Typography sx={{ fontSize: "h6.fontSize" }}>
-                  Alexis Jennings
+                  alexis jennings.
                </Typography>
                <Drawer
                   anchor="top"
@@ -45,7 +45,7 @@ function Header() {
                         <ListItemButton component="a" href="/">
                            <ListItemText
                               sx={{ fontSize: "h6.fontSize" }}
-                              primary="Home"
+                              primary="home"
                            ></ListItemText>
                         </ListItemButton>
                      </ListItem>
@@ -53,7 +53,7 @@ function Header() {
                         <ListItemButton component="a" href="/about">
                            <ListItemText
                               sx={{ fontSize: "h6.fontSize" }}
-                              primary="About"
+                              primary="about"
                            ></ListItemText>
                         </ListItemButton>
                      </ListItem>
@@ -61,7 +61,7 @@ function Header() {
                         <ListItemButton component="a" href="/projects">
                            <ListItemText
                               sx={{ fontSize: "h6.fontSize" }}
-                              primary="Projects"
+                              primary="projects"
                            ></ListItemText>
                         </ListItemButton>
                      </ListItem>
@@ -69,7 +69,7 @@ function Header() {
                         <ListItemButton component="a" href="/contact">
                            <ListItemText
                               sx={{ fontSize: "h6.fontSize" }}
-                              primary="Contact"
+                              primary="contact"
                            ></ListItemText>
                         </ListItemButton>
                      </ListItem>
