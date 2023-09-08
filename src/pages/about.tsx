@@ -19,7 +19,7 @@ export default function Page() {
          </Typography>
          <Paper sx={{ mx: 3 }}>
             <Typography sx={{ px: 3, pt: 3 }} variant="body1" align="left">
-               hi! I'm Alexis, a 22 year-old developer from Dallas, Texas.
+               hi! I&apos;m Alexis, a 22 year-old developer from Dallas, Texas.
                yeehaw!
             </Typography>
             <Typography sx={{ px: 3, pt: 3 }} variant="body1" align="left">
