@@ -31,7 +31,11 @@ function Header() {
                >
                   <MenuIcon />
                </IconButton>
-               <Typography sx={{ fontSize: "h6.fontSize" }}>
+               <Typography
+                  sx={{ fontSize: "h6.fontSize" }}
+                  component="a"
+                  href="/"
+               >
                   alexis jennings.
                </Typography>
                <Drawer

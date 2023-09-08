@@ -5,6 +5,7 @@ import {
    CardActions,
    CardContent,
    Chip,
+   Container,
    Stack,
    Typography,
 } from "@mui/material";
@@ -63,60 +64,62 @@ export default function Page() {
             pb: 6,
          }}
       >
-         <Typography
-            sx={{ fontWeight: "medium", pl: 3 }}
-            component="h1"
-            variant="h4"
-            align="left"
-            gutterBottom
-         >
-            projects.
-         </Typography>
-         {projects.map((project) => (
-            <Box sx={{ margin: 3 }} key={project.id}>
-               <Card>
-                  <CardContent>
-                     <Typography
-                        sx={{ fontWeight: "medium", mb: 1 }}
-                        component="h2"
-                        variant="h5"
-                        align="left"
-                     >
-                        {project.title}
-                     </Typography>
-                     <Box className="flex justify-left" sx={{ mb: 1 }}>
-                        <Stack direction="row" spacing={1}>
-                           {project.tools.map((tool) => (
-                              <Chip
-                                 label={tool}
-                                 color="primary"
-                                 size="small"
-                                 className="font-medium"
-                                 key={tool}
-                              />
-                           ))}
-                        </Stack>
-                     </Box>
-                     <Typography variant="body1" align="left">
-                        {project.descr}
-                     </Typography>
-                  </CardContent>
-                  <Box className="flex justify-center">
-                     <CardActions>
-                        <Button
-                           sx={{ mb: 2 }}
-                           variant="contained"
-                           href={project.link}
-                           target="_blank"
-                           rel="noopener noreferrer"
+         <Container maxWidth="md">
+            <Typography
+               sx={{ fontWeight: "medium", pl: 3 }}
+               component="h1"
+               variant="h4"
+               align="left"
+               gutterBottom
+            >
+               projects.
+            </Typography>
+            {projects.map((project) => (
+               <Box sx={{ margin: 3 }} key={project.id}>
+                  <Card>
+                     <CardContent>
+                        <Typography
+                           sx={{ fontWeight: "medium", mb: 1 }}
+                           component="h2"
+                           variant="h5"
+                           align="left"
                         >
-                           Open in GitHub
-                        </Button>
-                     </CardActions>
-                  </Box>
-               </Card>
-            </Box>
-         ))}
+                           {project.title}
+                        </Typography>
+                        <Box className="flex justify-left" sx={{ mb: 1 }}>
+                           <Stack direction="row" spacing={1}>
+                              {project.tools.map((tool) => (
+                                 <Chip
+                                    label={tool}
+                                    color="primary"
+                                    size="small"
+                                    className="font-medium"
+                                    key={tool}
+                                 />
+                              ))}
+                           </Stack>
+                        </Box>
+                        <Typography variant="body1" align="left">
+                           {project.descr}
+                        </Typography>
+                     </CardContent>
+                     <Box className="flex justify-center">
+                        <CardActions>
+                           <Button
+                              sx={{ mb: 2 }}
+                              variant="contained"
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              Open in GitHub
+                           </Button>
+                        </CardActions>
+                     </Box>
+                  </Card>
+               </Box>
+            ))}
+         </Container>
       </Box>
    );
 }
